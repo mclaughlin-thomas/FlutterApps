@@ -15,25 +15,23 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false, // remove debug banner
       home: Scaffold(
         backgroundColor: const Color.fromARGB(255, 104, 203, 252),
-        body: Stack(
-          alignment: Alignment.center,
-          children: [
-            Container(
-              height: 300,
-              width: 300,
-              color: Colors.red ,
+        body: Center(
+          child: GestureDetector(
+            onTap: () {
+              //do something when tapped!
+              print("Tapped!");
+            },
+            child: Container(
+            height: 200,
+            width: 200,
+            color: Colors.white,
+            child: Center(
+              child: Text(
+                "Tap me!"
+                ),
             ),
-            Container(
-              height: 200,
-              width: 200,
-              color: Color.fromARGB(255, 37, 100, 87) ,
-            ),
-            Container(
-              height: 100,
-              width: 100,
-              color: Color.fromARGB(255, 160, 101, 145) ,
-            ),
-          ],
+          ),
+          ),
         ),
       ), // skelleton widget that holds different parts of app
     );
