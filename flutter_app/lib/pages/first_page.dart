@@ -11,14 +11,8 @@ class FirstPage extends StatelessWidget {
           "First Page"
         ),
       ),
-      body: Center(
-        child: ElevatedButton(
-          child: Text("Go to Second Page"),
-          onPressed: () {
-            Navigator.pushNamed(context, '/second');
-          },
-        ),
-      )
+      drawer: Drawer(),
+
     );
   }
 }
