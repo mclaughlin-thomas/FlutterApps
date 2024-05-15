@@ -19,13 +19,21 @@ class FirstPage extends StatelessWidget {
               child: Icon (
                 Icons.favorite,
                 size: 100,
-              )
+              ),
             ),
 
             //home page
+            ListTile(
+              leading: Icon (
+                Icons.home
+              ),
+              title: Text(
+                "H o m e"
+              ),
+            ),
 
             //settings page
-          ]
+          ],
       ),
       ),
 
