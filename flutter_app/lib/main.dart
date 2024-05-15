@@ -29,24 +29,22 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             //child 1
-            Container(
-              height: 200,
-              width: 200,
-              color: Colors.deepPurple,
+            Expanded(
+              child: Container(
+                  color: Color.fromARGB(255, 194, 166, 41),
+              ),
             ),
 
             //child 2
-            Container(
-              height: 200,
-              width: 200,
-              color: const Color.fromARGB(255, 92, 85, 105),
+            Expanded(
+              child: Container(
+                  color: Color.fromARGB(157, 100, 27, 88),
+              ),
             ),
 
             //child 3
             Expanded(
               child: Container(
-                  height: 200,
-                  width: 200,
                   color: const Color.fromARGB(255, 184, 176, 197),
               ),
             ),
