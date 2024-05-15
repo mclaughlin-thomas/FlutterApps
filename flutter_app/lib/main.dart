@@ -17,7 +17,9 @@ class MyApp extends StatelessWidget {
           child: Container(
             height: 300,
             width: 300,
-            color: Colors.white,
+            decoration: BoxDecoration(
+              color: Colors.blue,
+            ),
             padding: EdgeInsets.symmetric(horizontal: 25, vertical: 50),
             child: Text("Hello World"),
           ),
