@@ -10,17 +10,14 @@ void main() {
 class MyApp extends StatelessWidget {
   MyApp({super.key});
 
-  String name = "Ham";
-  int age = 20;
-  double height = 5.5;
-  bool isMale = false;
-
 
   @override
   Widget build(BuildContext context) {
+    int counter = 0;
 
-    for ( int i = 0; i < 10; i++) {
-      print(i);
+    while (counter < 10) {
+      print(counter);
+      counter++;
     }
 
     return const MaterialApp(
