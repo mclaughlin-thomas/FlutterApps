@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+
+  List names = ["John", "Doe", "Jane", "Doe"];
 
   @override
   Widget build(BuildContext context) {
@@ -26,9 +28,9 @@ class MyApp extends StatelessWidget {
           ],
         ),
         body: ListView.builder(
-          itemCount: 10,
+          itemCount: names.length,
           itemBuilder: (context, index) => ListTile(
-            title: Text(index.toString()),
+            title: Text(names[index]),
           ),
         ),
       ), // skelleton widget that holds different parts of app
