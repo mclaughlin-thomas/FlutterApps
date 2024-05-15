@@ -30,6 +30,9 @@ class FirstPage extends StatelessWidget {
               title: Text(
                 "H o m e"
               ),
+              onTap: () {
+                Navigator.pushNamed(context, '/first');
+              }
             ),
 
             ListTile(
