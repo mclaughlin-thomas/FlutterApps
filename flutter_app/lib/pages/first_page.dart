@@ -11,7 +11,9 @@ class FirstPage extends StatelessWidget {
           "First Page"
         ),
       ),
-      drawer: Drawer(),
+      drawer: Drawer(
+        backgroundColor: Colors.blueGrey,
+      ),
 
     );
   }
