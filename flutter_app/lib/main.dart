@@ -37,6 +37,7 @@ class MyApp extends StatelessWidget {
 
             //child 2
             Expanded(
+              flex: 2,
               child: Container(
                   color: Color.fromARGB(157, 100, 27, 88),
               ),
