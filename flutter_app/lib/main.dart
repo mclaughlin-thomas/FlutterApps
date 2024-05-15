@@ -15,9 +15,15 @@ class MyApp extends StatelessWidget {
     print('Hello');
   }
 
+  void greetPerson(String name){
+    print("Hello " + name);
+  }
+
   @override
   Widget build(BuildContext context) {
+    String name = "John";
     greet();
+    greetPerson(name);
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(),
