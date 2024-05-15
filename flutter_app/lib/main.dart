@@ -13,10 +13,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false, // remove debug banner
       home: Scaffold(
         backgroundColor: const Color.fromARGB(255, 104, 203, 252),
-        body: Container(
-          height: 300,
-          width: 300,
-          color: Colors.white,
+        body: Center(
+          child: Container(
+            height: 300,
+            width: 300,
+            color: Colors.white,
+          ),
         ),
       ), // skelleton widget that holds different parts of app
     );
