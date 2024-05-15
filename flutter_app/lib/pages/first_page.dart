@@ -31,7 +31,7 @@ class FirstPage extends StatelessWidget {
                 "H o m e"
               ),
               onTap: () {
-                Navigator.pushNamed(context, '/first');
+                Navigator.pushNamed(context, '/homepage');
               }
             ),
 
@@ -42,6 +42,9 @@ class FirstPage extends StatelessWidget {
               title: Text(
                 "S e t t i n g s"
               ),
+              onTap: () {
+                Navigator.pushNamed(context, '/settingspage');
+              }
             ),
 
             //settings page

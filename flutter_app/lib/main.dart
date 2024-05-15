@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
       home: FirstPage(), // skelleton widget that holds different parts of app
       routes: {
         '/first': (context) => FirstPage(), // route to '/first' page
-        'homepage': (context) => HomePage(), // route to 'homepage' page
-        'settings': (context) => SettingsPage(), // route to 'settings' page
+        '/homepage': (context) => HomePage(), // route to 'homepage' page
+        '/settingspage': (context) => SettingsPage(), // route to 'settings' page
       }
     );
   }
