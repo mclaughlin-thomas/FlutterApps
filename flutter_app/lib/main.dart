@@ -19,9 +19,16 @@ class MyApp extends StatelessWidget {
             width: 300,
             decoration: BoxDecoration(
               color: Colors.blue,
+              borderRadius: BorderRadius.circular(20), // border radius, rounded edges!
             ),
             padding: EdgeInsets.symmetric(horizontal: 25, vertical: 50),
-            child: Text("Hello World"),
+            child: Text(
+              "Hello Worldd",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 30,
+              ),
+            ),
           ),
         ),
       ), // skelleton widget that holds different parts of app
