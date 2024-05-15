@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Color.fromARGB(255, 59, 95, 93),
           elevation: 0,
           leading: Icon(Icons.menu),
+          actions: [ IconButton(onPressed: () {}, icon: Icon(Icons.logout),),],
         ),
         body: Center(
           child: Container(
