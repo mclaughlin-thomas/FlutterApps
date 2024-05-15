@@ -31,6 +31,8 @@ class FirstPage extends StatelessWidget {
                 "H o m e"
               ),
               onTap: () {
+                //pop the drawer
+                Navigator.pop(context);
                 Navigator.pushNamed(context, '/homepage');
               }
             ),
@@ -43,6 +45,8 @@ class FirstPage extends StatelessWidget {
                 "S e t t i n g s"
               ),
               onTap: () {
+                //pop the drawer
+                Navigator.pop(context);
                 Navigator.pushNamed(context, '/settingspage');
               }
             ),
