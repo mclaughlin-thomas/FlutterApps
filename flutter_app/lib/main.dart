@@ -29,27 +29,22 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             //child 1
-            Expanded(
-              child: Container(
-                  color: Color.fromARGB(255, 194, 166, 41),
-              ),
+            Container(
+              height: 300,
+              color: Colors.deepPurple,
             ),
 
             //child 2
-            Expanded(
-              flex: 2,
-              child: Container(
-                  color: Color.fromARGB(157, 100, 27, 88),
-              ),
+            Container(
+              height: 300,
+              color: const Color.fromARGB(255, 92, 85, 105),
             ),
 
             //child 3
-            Expanded(
-              child: Container(
-                  color: const Color.fromARGB(255, 184, 176, 197),
-              ),
+            Container(
+              height: 300,
+              color: const Color.fromARGB(255, 184, 176, 197),
             ),
-            
           ],
         ),
       ), // skelleton widget that holds different parts of app
