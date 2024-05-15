@@ -19,6 +19,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (age>18){
+      print("Ham is a bit old for a cat!");
+    }
+    else{
+      print("Ham is a young cat!");
+    }
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(),
