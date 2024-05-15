@@ -25,22 +25,7 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Center(
-          child: Container(
-            height: 300,
-            width: 300,
-            decoration: BoxDecoration(
-              color: Colors.blue,
-              borderRadius: BorderRadius.circular(20), // border radius, rounded edges!
-            ),
-            padding: EdgeInsets.symmetric(horizontal: 25, vertical: 50),
-            child: const Icon(
-              Icons.favorite,
-              color: Colors.white,
-              size: 92,
-            ),
-          ),
-        ),
+        body: Column(),
       ), // skelleton widget that holds different parts of app
     );
   }
