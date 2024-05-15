@@ -22,13 +22,10 @@ class MyApp extends StatelessWidget {
               borderRadius: BorderRadius.circular(20), // border radius, rounded edges!
             ),
             padding: EdgeInsets.symmetric(horizontal: 25, vertical: 50),
-            child: Text(
-              "Hello Worldd",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-              ),
+            child: const Icon(
+              Icons.favorite,
+              color: Colors.white,
+              size: 92,
             ),
           ),
         ),
