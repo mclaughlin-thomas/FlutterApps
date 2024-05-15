@@ -15,10 +15,15 @@ class MyApp extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 104, 203, 252),
         appBar: AppBar(
           title: Text("My app bar"),
-          backgroundColor: Color.fromARGB(255, 59, 95, 93),
+          backgroundColor: Color.fromARGB(255, 111, 255, 248),
           elevation: 0,
           leading: Icon(Icons.menu),
-          actions: [ IconButton(onPressed: () {}, icon: Icon(Icons.logout),),],
+          actions: [
+            IconButton (
+              onPressed: () {},
+              icon: Icon(Icons.logout),
+            ),
+          ],
         ),
         body: Center(
           child: Container(
