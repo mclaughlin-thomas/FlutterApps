@@ -19,10 +19,11 @@ class MyApp extends StatelessWidget {
     print("Hello " + name);
   }
   
-  List numbers = [1, 2, 3, 4, 5];
+  List <int> numbers = [1, 2, 2, 2, 5]; // can have dupes
+  Set <int> setNumbs = {1, 2, 3, 4, 5}; // no dupes
   void PrintNums() {
-      for (int i = 0; i < numbers.length; i++) {
-        print(numbers[i]);
+      for (int i = 0; i < setNumbs.length; i++) {
+        print(setNumbs.elementAt(i));
       }
     }
 
