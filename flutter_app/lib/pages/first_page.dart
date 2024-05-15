@@ -37,7 +37,7 @@ class FirstPage extends StatelessWidget {
                 Icons.settings
               ),
               title: Text(
-                "H o m e"
+                "S e t t i n g s"
               ),
             ),
 
