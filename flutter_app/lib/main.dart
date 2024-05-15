@@ -25,7 +25,30 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Column(),
+        body: Column(
+          children: [
+            //child 1
+            Container(
+              height: 200,
+              width: 200,
+              color: Colors.deepPurple,
+            ),
+
+            //child 2
+            Container(
+              height: 200,
+              width: 200,
+              color: const Color.fromARGB(255, 92, 85, 105),
+            ),
+
+            //child 3
+            Container(
+              height: 200,
+              width: 200,
+              color: const Color.fromARGB(255, 184, 176, 197),
+            ),
+          ],
+        ),
       ), // skelleton widget that holds different parts of app
     );
   }
