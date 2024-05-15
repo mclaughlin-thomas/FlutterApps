@@ -11,15 +11,13 @@ class MyApp extends StatelessWidget {
   MyApp({super.key});
 
 
+  void greet() {
+    print('Hello');
+  }
+
   @override
   Widget build(BuildContext context) {
-    int counter = 0;
-
-    while (counter < 10) {
-      print(counter);
-      counter++;
-    }
-
+    greet();
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(),
