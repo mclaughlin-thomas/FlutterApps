@@ -25,8 +25,7 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        body: ListView(
           children: [
             //child 1
             Container(
