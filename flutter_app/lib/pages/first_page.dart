@@ -20,7 +20,11 @@ class FirstPage extends StatelessWidget {
                 Icons.favorite,
                 size: 100,
               )
-            )
+            ),
+
+            //home page
+
+            //settings page
           ]
       ),
       ),
