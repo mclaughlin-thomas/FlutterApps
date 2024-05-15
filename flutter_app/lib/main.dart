@@ -9,6 +9,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false, // remove debug banner
+      home: Scaffold(
+        backgroundColor: Colors.blueGrey,
+      ), // skelleton widget that holds different parts of app
+    );
   }
 }
