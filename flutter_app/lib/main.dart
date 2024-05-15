@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
             height: 300,
             width: 300,
             color: Colors.white,
+            child: Text("Hello World"),
           ),
         ),
       ), // skelleton widget that holds different parts of app
