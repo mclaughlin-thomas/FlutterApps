@@ -25,27 +25,11 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: ListView(
-          scrollDirection: Axis.horizontal,
-          children: [
-            //child 1
-            Container(
-              width: 300,
-              color: Colors.deepPurple,
-            ),
-
-            //child 2
-            Container(
-              width: 300,
-              color: const Color.fromARGB(255, 92, 85, 105),
-            ),
-
-            //child 3
-            Container(
-              width: 300,
-              color: const Color.fromARGB(255, 184, 176, 197),
-            ),
-          ],
+        body: ListView.builder(
+          itemCount: 10,
+          itemBuilder: (context, index) => ListTile(
+            title: Text(index.toString()),
+          ),
         ),
       ), // skelleton widget that holds different parts of app
     );
