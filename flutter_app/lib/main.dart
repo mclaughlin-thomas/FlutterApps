@@ -13,6 +13,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false, // remove debug banner
       home: Scaffold(
         backgroundColor: const Color.fromARGB(255, 104, 203, 252),
+        appBar: AppBar(
+          title: Text("My app bar"),
+          backgroundColor: Color.fromARGB(255, 59, 95, 93),
+        ),
         body: Center(
           child: Container(
             height: 300,
