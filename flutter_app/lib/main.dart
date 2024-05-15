@@ -21,6 +21,12 @@ class MyApp extends StatelessWidget {
   
   List <int> numbers = [1, 2, 2, 2, 5]; // can have dupes
   Set <int> setNumbs = {1, 2, 3, 4, 5}; // no dupes
+  //map does key value pairs
+  Map user = {
+    'name': 'John',
+    'age': 30,
+    'isMale': true
+  };
   void PrintNums() {
       for (int i = 0; i < setNumbs.length; i++) {
         print(setNumbs.elementAt(i));
@@ -30,7 +36,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     PrintNums();
-  
+    print(user['name']);
+    print(user['age']);
 
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
