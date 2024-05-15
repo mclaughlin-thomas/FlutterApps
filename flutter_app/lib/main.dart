@@ -12,7 +12,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false, // remove debug banner
       home: Scaffold(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: const Color.fromARGB(255, 104, 203, 252),
+        body: Container(
+          height: 300,
+          width: 300,
+          color: Colors.white,
+        ),
       ), // skelleton widget that holds different parts of app
     );
   }
