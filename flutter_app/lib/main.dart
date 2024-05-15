@@ -18,12 +18,19 @@ class MyApp extends StatelessWidget {
   void greetPerson(String name){
     print("Hello " + name);
   }
+  
+  List numbers = [1, 2, 3, 4, 5];
+  void PrintNums() {
+      for (int i = 0; i < numbers.length; i++) {
+        print(numbers[i]);
+      }
+    }
 
   @override
   Widget build(BuildContext context) {
-    String name = "John";
-    greet();
-    greetPerson(name);
+    PrintNums();
+  
+
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(),
