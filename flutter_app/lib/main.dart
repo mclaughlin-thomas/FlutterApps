@@ -16,6 +16,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("My app bar"),
           backgroundColor: Color.fromARGB(255, 59, 95, 93),
+          elevation: 0,
+          leading: Icon(Icons.menu),
         ),
         body: Center(
           child: Container(
