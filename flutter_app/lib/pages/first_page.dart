@@ -32,6 +32,15 @@ class FirstPage extends StatelessWidget {
               ),
             ),
 
+            ListTile(
+              leading: Icon (
+                Icons.settings
+              ),
+              title: Text(
+                "H o m e"
+              ),
+            ),
+
             //settings page
           ],
       ),
