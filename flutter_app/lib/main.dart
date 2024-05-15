@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: const Color.fromARGB(255, 104, 203, 252),
         body: Stack(
+          alignment: Alignment.center,
           children: [
             Container(
               height: 300,
