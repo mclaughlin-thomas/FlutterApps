@@ -43,11 +43,14 @@ class MyApp extends StatelessWidget {
             ),
 
             //child 3
-            Container(
-              height: 200,
-              width: 200,
-              color: const Color.fromARGB(255, 184, 176, 197),
+            Expanded(
+              child: Container(
+                  height: 200,
+                  width: 200,
+                  color: const Color.fromARGB(255, 184, 176, 197),
+              ),
             ),
+            
           ],
         ),
       ), // skelleton widget that holds different parts of app
