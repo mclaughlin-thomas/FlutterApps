@@ -13,6 +13,16 @@ class FirstPage extends StatelessWidget {
       ),
       drawer: Drawer(
         backgroundColor: Colors.blueGrey,
+        child: Column (
+          children: [
+            DrawerHeader(
+              child: Icon (
+                Icons.favorite,
+                size: 100,
+              )
+            )
+          ]
+      ),
       ),
 
     );
