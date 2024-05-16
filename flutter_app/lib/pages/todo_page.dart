@@ -30,6 +30,7 @@ class _ToDoPageState extends State<ToDoPage> {
                 controller: myController,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
+                  hintText: "Type your name",
                   ),
               ),
           
