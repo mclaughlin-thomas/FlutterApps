@@ -14,9 +14,9 @@ class _ToDoPageState extends State<ToDoPage> {
 
   //greet user method
   void greetUser() {
-    
+    String userName = myController.text;
     setState(() {
-      greetingMessage = "Hello, " + myController.text;
+      greetingMessage = "Hello, " + userName;
     });
   }
 
