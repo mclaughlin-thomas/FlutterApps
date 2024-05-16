@@ -21,21 +21,24 @@ class _ToDoPageState extends State<ToDoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            TextField(
-              controller: myController,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                ),
-            ),
-
-            ElevatedButton(
-              onPressed: greetUser,
-              child: Text("Tap"),
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(25.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextField(
+                controller: myController,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  ),
+              ),
+          
+              ElevatedButton(
+                onPressed: greetUser,
+                child: Text("Tap"),
+              ),
+            ],
+          ),
         ),
       ),
     );
