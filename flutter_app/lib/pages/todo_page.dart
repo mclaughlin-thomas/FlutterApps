@@ -26,6 +26,9 @@ class _ToDoPageState extends State<ToDoPage> {
           children: [
             TextField(
               controller: myController,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                ),
             ),
 
             ElevatedButton(
