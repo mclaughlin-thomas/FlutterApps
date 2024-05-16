@@ -1,26 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/pages/first_page.dart';
-import 'package:flutter_app/pages/home_page.dart';
-import 'package:flutter_app/pages/settings_page.dart';
-
+import 'package:flutter_app/pages/counter_page.dart';
 void main() {
-  runApp(MyApp());
+  runApp(CounterApp());
 }
 
-class MyApp extends StatelessWidget {
-  MyApp({super.key});
-
+class CounterApp extends StatelessWidget {
+  const CounterApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // remove debug banner
-      home: FirstPage(), // skelleton widget that holds different parts of app
-      routes: {
-        '/first': (context) => FirstPage(), // route to '/first' page
-        '/homepage': (context) => HomePage(), // route to 'homepage' page
-        '/settingspage': (context) => SettingsPage(), // route to 'settings' page
-      }
+      home: CounterPage(),
     );
   }
 }
