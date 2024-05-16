@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/pages/counter_page.dart';
+import 'package:flutter_app/pages/todo_page.dart';
+
 void main() {
-  runApp(CounterApp());
+  runApp(MyApp());
 }
 
-class CounterApp extends StatelessWidget {
-  const CounterApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: CounterPage(),
+      debugShowCheckedModeBanner: false,
+      home: ToDoPage(),
     );
   }
 }
