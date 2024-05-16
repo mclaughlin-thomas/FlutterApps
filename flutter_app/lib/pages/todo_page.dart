@@ -14,8 +14,13 @@ class _ToDoPageState extends State<ToDoPage> {
 
   //greet user method
   void greetUser() {
-    print(myController.text);
+    
+    setState(() {
+      greetingMessage = "Hello, " + myController.text;
+    });
   }
+
+  String greetingMessage = "";
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +31,10 @@ class _ToDoPageState extends State<ToDoPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+
+              Text(greetingMessage),
+
+
               TextField(
                 controller: myController,
                 decoration: InputDecoration(
