@@ -10,9 +10,12 @@ class ToDoTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(25.0),
       child: Container(
-        //padding: const EdgeInsets.all(25.0),
-        child: Text("make tutorial"),
-        decoration: BoxDecoration(color: Colors.yellow),
+        padding: const EdgeInsets.all(20.0),
+        child: Text("test test"),
+        decoration: BoxDecoration(
+          color: Colors.yellow,
+          borderRadius: BorderRadius.circular(12),
+        ),
       ),
     );
   }
