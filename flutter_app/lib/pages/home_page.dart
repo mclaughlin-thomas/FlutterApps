@@ -14,8 +14,13 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Color.fromARGB(255, 174, 245, 127),
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 158, 204, 72),
-        
         title: Center(child: Text('To Do')),
+        elevation: 0,
+      ),
+      body: ListView(
+        children: [
+          ToDoList(),
+        ],
       ),
     );
   }
