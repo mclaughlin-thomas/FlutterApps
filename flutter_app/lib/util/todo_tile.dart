@@ -37,7 +37,10 @@ class ToDoTile extends StatelessWidget {
               ),
 
             //task name
-            Text(taskName),
+            Text(
+              taskName,
+              style: TextStyle(decoration: TextDecoration.lineThrough),
+              ),
           ],
         ),
       ),
