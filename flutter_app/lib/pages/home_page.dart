@@ -8,13 +8,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
-  //at 1:11:31
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 248, 192, 192),
+      backgroundColor: Colors.yellow[200],
+      appBar: AppBar(
+        backgroundColor: Colors.yellow[800],
+      ),
     );
   }
 }
