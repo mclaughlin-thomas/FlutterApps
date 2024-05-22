@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/util/dialog_box.dart';
 import '../util/todo_tile.dart';
 
 class HomePage extends StatefulWidget {
@@ -9,6 +10,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+  final _controller = TextEditingController();
 
   //list of todo tasks
   List toDoList = [
@@ -22,6 +25,27 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  void saveNewTask(){
+    setState(() {
+      toDoList.add([_controller.text, false]);
+      _controller.clear();
+    });
+    Navigator.of(context).pop();
+  }
+
+  void createNewTask(){
+    showDialog(
+      context: context,
+      builder: (context) {
+        return DioalogBox(
+          controller: _controller,
+          onSave: saveNewTask,
+          onCancel: () => Navigator.pop(context),
+        );
+      },
+    );
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +55,10 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Color.fromARGB(255, 158, 204, 72),
         title: Center(child: Text('To Do')),
         elevation: 0,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: createNewTask,
+        child: Icon(Icons.add),
       ),
       body: ListView.builder(
         itemCount: toDoList.length,
