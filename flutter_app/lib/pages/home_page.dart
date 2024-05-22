@@ -16,18 +16,19 @@ class _HomePageState extends State<HomePage> {
   //ref the hive box
   final _myBox = Hive.box('mybox');
 
-  final _controller = TextEditingController();
-
   ToDoDataBase db = ToDoDataBase();
+
+  final _controller = TextEditingController();
 
   @override
   void initState() {
+    
     //if first time ever opening the app, then create defualt data
-
-    if(_myBox.get("TODO") == null){
+    if(_myBox.get("TODOLIST") == null){
       db.createInitialData();
     }
     else{
+      print("Data already exists");
       //there already exists data
       db.loadData();
     }
@@ -39,7 +40,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       db.toDoList[index][1] = !db.toDoList[index][1];
     });
-    db.updateData();
+    db.updateDataBase();
   }
 
   void saveNewTask(){
@@ -48,7 +49,7 @@ class _HomePageState extends State<HomePage> {
       _controller.clear();
     });
     Navigator.of(context).pop();
-    db.updateData();
+    db.updateDataBase();
   }
 
   void createNewTask(){
@@ -68,7 +69,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       db.toDoList.removeAt(index);
     });
-    db.updateData();
+    db.updateDataBase();
   }
 
 
